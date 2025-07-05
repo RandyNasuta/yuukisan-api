@@ -13,5 +13,5 @@ func main() {
 
 	r := routes.SetupRouter()
 
-	r.Run(":" + config.GetEnv("APP_PORT", "3000"))
+	r.Run("0.0.0.0:" + config.GetEnv("APP_PORT", "3000"))
 }

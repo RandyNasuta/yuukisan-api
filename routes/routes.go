@@ -23,5 +23,11 @@ func SetupRouter() *gin.Engine {
 	// route GET Article by id
 	router.GET("/api/articles/:id", controllers.FindArticleById)
 
+	// route GET all Articles
+	router.GET("/api/articles", controllers.GetAllArticles)
+
+	//route GET all Categories
+	router.GET("/api/categories", controllers.GetAllCategory)
+
 	return router
 }
